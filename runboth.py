@@ -4,8 +4,8 @@ import time
 import matplotlib.pyplot as plt
 
 # Paths to the client and server scripts
-client_script_path = r'C:\Users\Andrew\OneDrive\Documents\PyFolderTest\Client.py'
-server_script_path = r'C:\Users\Andrew\OneDrive\Documents\PyFolderTest\Server.py'
+client_script_path = r'Folder_Location'
+server_script_path = r'Folder_Location'
 
 def run_scripts():
     server_process = subprocess.Popen([sys.executable, server_script_path])
@@ -23,6 +23,7 @@ if __name__ == "__main__":
     number_of_runs = 1000
     run_times = []
     run_scripts()
+    # Analysis Purposes to check timing
     # for _ in range(number_of_runs):
     #     total_time = run_scripts()
     #     run_times.append(total_time)
